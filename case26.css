@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #100d20;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.navbar {
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #17132a;
+    border-bottom: 1px solid #ffffff12;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ffca5c;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 23px;
+}
+
+.navbar nav a {
+    color: #d5d0e7;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffca5c;
+}
+
+.nav-btn, .primary-btn, .outline-btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-btn, .primary-btn {
+    color: #17132a;
+    background: #ffca5c;
+}
+
+.nav-btn:hover, .primary-btn:hover {
+    background: #ffe29b;
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 620px;
+    padding: 75px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 80% 40%, #692c81 0%, transparent 38%),
+        linear-gradient(125deg, #17132a, #24133d 60%, #321744);
+}
+
+.hero-content {
+    max-width: 620px;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: #ffca5c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 78px);
+    line-height: 1.08;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #ffca5c;
+    text-shadow: 0 0 30px #ffca5c35;
+}
+
+.hero-description {
+    color: #d2cbe4;
+    max-width: 510px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.outline-btn {
+    border: 1px solid #b5a4d7;
+    color: white;
+}
+
+.outline-btn:hover {
+    background: #ffffff15;
+}
+
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.event-details div {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details strong {
+    color: #ffca5c;
+    font-size: 14px;
+}
+
+.event-details small {
+    color: #c4b8d9;
+    font-size: 11px;
+}
+
+.hero-art {
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(135deg, #f74d91, #8039e8);
+    box-shadow: 0 0 90px #c12b9a35;
+}
+
+.circle-two {
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(135deg, #ffca5c, #ff755c);
+    border: 8px solid #ffffff20;
+}
+
+.festival-emoji {
+    position: relative;
+    z-index: 1;
+    font-size: 115px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.art-label {
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+    background: #fff;
+    color: #24133d;
+    border-radius: 30px;
+    padding: 10px 17px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 30px #0004;
+}
+
+.intro {
+    padding: 80px 8%;
+    text-align: center;
+    background: #17132a;
+}
+
+.intro h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.intro h2 span, .section-title span,
+.register-info h2 span {
+    color: #ffca5c;
+}
+
+.intro > p:last-child {
+    max-width: 720px;
+    margin: auto;
+    color: #c8c1db;
+}
+
+.section {
+    padding: 75px 8%;
+}
+
+.section > .eyebrow, .schedule-section > .eyebrow {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+}
+
+.event-card {
+    padding: 28px;
+    border: 1px solid #ffffff15;
+    border-radius: 17px;
+    background: #1b1730;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.tech::before { background: #56c8ff; }
+.music::before { background: #ff679f; }
+.art::before { background: #ffca5c; }
+.dance::before { background: #bc83ff; }
+.quiz::before { background: #60e0b0; }
+.photo::before { background: #ff8b68; }
+
+.event-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffffff35;
+    box-shadow: 0 15px 35px #0003;
+}
+
+.event-emoji {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.event-type {
+    color: #ffca5c;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.event-card h3 {
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.event-card p {
+    color: #c4bdd5;
+    font-size: 13px;
+    min-height: 65px;
+}
+
+.event-card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #ffca5c;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.event-card a:hover {
+    color: white;
+}
+
+.schedule-section {
+    padding: 75px 8%;
+    background: #17132a;
+}
+
+.schedule-wrap {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.schedule-day {
+    padding: 25px;
+    border: 1px solid #ffffff15;
+    border-radius: 16px;
+    background: #211b39;
+}
+
+.schedule-day h3 {
+    color: #ffca5c;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.schedule-day h3 span {
+    display: block;
+    color: #c6b9df;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.schedule-row {
+    display: flex;
+    gap: 17px;
+    padding: 17px 0;
+    border-top: 1px solid #ffffff12;
+}
+
+.schedule-row time {
+    min-width: 90px;
+    color: #ffca5c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.schedule-row strong {
+    font-size: 13px;
+}
+
+.schedule-row p {
+    color: #c4bdd5;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.schedule-note {
+    text-align: center;
+    color: #bdb4d0;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+.register-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 80px 10%;
+    background:
+        radial-gradient(ellipse at left, #4b2266, transparent 60%),
+        #100d20;
+}
+
+.register-info h2 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.register-info > p:not(.eyebrow) {
+    color: #d0c7df;
+}
+
+.register-sticker {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 17px;
+    border: 1px solid #ffca5c66;
+    border-radius: 8px;
+    color: #ffca5c;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.register-form {
+    padding: 30px;
+    border-radius: 17px;
+    background: #211b39;
+    border: 1px solid #ffffff18;
+}
+
+.register-form h3 {
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.register-form label {
+    display: block;
+    color: #e5dff0;
+    font-size: 12px;
+    margin: 14px 0 6px;
+}
+
+.register-form input, .register-form select {
+    width: 100%;
+    padding: 12px;
+    background: #151127;
+    color: white;
+    border: 1px solid #514567;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.register-form input:focus, .register-form select:focus {
+    outline: 2px solid #ffca5c;
+    border-color: transparent;
+}
+
+.register-form select option {
+    background: #211b39;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #ffca5c;
+    color: #17132a;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-form button:hover {
+    background: #ffe29b;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    color: #c4bdd5;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #090713;
+}
+
+footer p {
+    color: #d0c7df;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+footer small {
+    color: #968ba9;
+    font-size: 11px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-4deg); }
+    50% { transform: translateY(-12px) rotate(4deg); }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons, .event-details {
+        justify-content: center;
+    }
+
+    .hero-art {
+        max-width: 100%;
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .register-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 580px) {
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero-art {
+        transform: scale(0.85);
+        margin: -15px 0;
+    }
+
+    .event-grid, .schedule-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .section, .schedule-section {
+        padding: 55px 6%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .register-section {
+        padding: 55px 6%;
+    }
+
+    .register-form {
+        padding: 22px;
+    }
+
+    .event-details {
+        gap: 18px;
+    }
+}
