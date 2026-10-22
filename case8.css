@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #282323;
+    background: #fffaf5;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    box-shadow: 0 3px 15px #0000000b;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #f05232;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: #393333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #f05232;
+}
+
+.order-btn, .button {
+    display: inline-block;
+    background: #f05232;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.order-btn:hover, .button:hover {
+    background: #c9361c;
+    transform: translateY(-3px);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 9%;
+    background: linear-gradient(120deg, #fff0df, #fffaf5);
+    min-height: 520px;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.tag {
+    color: #f05232;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span, .section-title span {
+    color: #f05232;
+}
+
+.hero-content > p:not(.tag) {
+    color: #716765;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 44%;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50% 50% 25px 25px;
+    box-shadow: 0 20px 45px #9d45252b;
+}
+
+.floating-label {
+    position: absolute;
+    bottom: 18px;
+    left: -20px;
+    padding: 12px 18px;
+    background: white;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.categories {
+    padding: 45px 7%;
+    text-align: center;
+    background: white;
+}
+
+.categories h2 {
+    margin-bottom: 22px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-list a {
+    padding: 12px 22px;
+    border: 1px solid #f3d8ca;
+    border-radius: 30px;
+    color: #44332e;
+    text-decoration: none;
+    background: #fffaf5;
+    transition: 0.3s;
+}
+
+.category-list a:hover {
+    background: #f05232;
+    color: white;
+}
+
+.section {
+    padding: 70px 8%;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.food-card {
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px #4a25100d;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #4a25101c;
+}
+
+.food-card img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.rating {
+    color: #e79a16;
+    font-size: 13px;
+}
+
+.food-info h3 {
+    margin: 8px 0;
+    font-size: 19px;
+}
+
+.food-info p {
+    color: #817571;
+    font-size: 13px;
+    min-height: 42px;
+}
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.food-bottom strong {
+    font-size: 21px;
+    color: #f05232;
+}
+
+.food-bottom a {
+    background: #fff0e9;
+    color: #e84628;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.food-bottom a:hover {
+    background: #f05232;
+    color: white;
+}
+
+.offer {
+    margin: 20px 8% 60px;
+    padding: 45px;
+    border-radius: 22px;
+    color: white;
+    background: linear-gradient(120deg, #f05232, #ff8a4c);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.offer h2 {
+    font-size: 38px;
+    margin: 5px 0;
+}
+
+.offer p {
+    font-size: 14px;
+}
+
+.offer .button {
+    background: white;
+    color: #e84628;
+    white-space: nowrap;
+}
+
+.reviews {
+    padding: 50px 8% 70px;
+    text-align: center;
+    background: white;
+}
+
+.review-card {
+    max-width: 650px;
+    margin: auto;
+    background: #fff5ed;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.review-card p {
+    margin-bottom: 15px;
+    color: #66534c;
+}
+
+.review-card strong {
+    color: #f05232;
+}
+
+.contact {
+    text-align: center;
+    padding: 45px 20px;
+    background: #2d201d;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #f0cfc2;
+    margin: 5px;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #e3d5cf;
+    background: #201715;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
