@@ -1,4 +1,4 @@
-# Web Development Activity-Based Learning
+# Naga_Meghana_Web_Development_Project
 
 ## Student Details
 - Name: Naga Meghana
@@ -12,7 +12,16 @@
 - CSS
 
 ## Project Files
-This repository contains the HTML and CSS files and the project report PDF.
+- case1.html & case1.css - Personal Portfolio (My Main Project)
+- case8.html & case8.css
+- case26.html & case26.css
+- Project Report PDF
+
+## Project Description
+This repository contains my Web Development project files created as part of college assignment. It includes responsive portfolio websites using HTML and CSS.
+
+## How to Run
+Just open any .html file in a browser.
 
 ## Project Report
 The PDF report contains the details of the project.
